@@ -16,10 +16,10 @@ The script requires the following packages to be installed prior to running it:
 * __tidyr__ (tested with version 0.2.0)
 
 If you do not have them installed already you can install them like this from the R/Rstudio prompt:
-<pre>
+```R
 install.packages(“dplyr”)
 install.packages(“tidyr”)
-</pre>
+```
 
 ## Required steps before running the script
 To run the script you will need the data set it operates on: UCI HAR Dataset.
@@ -32,15 +32,15 @@ To run the script:
 * Start R or Rstudio
 * Change the working directory to the same folder you saved the run_analysis.R script per the instruction above.
 * Enter the following and press enter to load and execute the script:
-<pre>
+```R
 source("run_analysis.R")
-</pre>
+```
 
 ## Script output
 Upon execution the script will load and process the UCI HAR Dataset. The result will be a table written to result.txt in the working directory. This table is a tidy data set of the wide kind. It’s dimensions are 180 rows by 68 columns. The CodeBook.md file explains each column. To load the result into R, please execute the following command (assuming that you have not changed working directory):
-<pre>
+```R
 data <- read.table("result.txt", header = TRUE)
-</pre>
+```
 
 # Decisions and assumptions
 This sections explains my major decisions and assumptions made during the course of solving this project assignment. Note that the script itself also contains step by step comments that explain what is done in each step.
