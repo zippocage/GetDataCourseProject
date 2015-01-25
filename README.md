@@ -37,7 +37,10 @@ source("run_analysis.R")
 </pre>
 
 ## Script output
-Upon execution the script will load and process the UCI HAR Dataset. The result will be a table written to result.txt in the working directory. This table is a tidy data set of the wide kind. It’s dimensions are 180 rows by 68 columns. The CodeBook.md file explains each column.
+Upon execution the script will load and process the UCI HAR Dataset. The result will be a table written to result.txt in the working directory. This table is a tidy data set of the wide kind. It’s dimensions are 180 rows by 68 columns. The CodeBook.md file explains each column. To load the result into R, please execute the following command (assuming that you have not changed working directory):
+<pre>
+data <- read.table("result.txt", header = TRUE)
+</pre>
 
 # Decisions and assumptions
 This sections explains my major decisions and assumptions made during the course of solving this project assignment. Note that the script itself also contains step by step comments that explain what is done in each step.
